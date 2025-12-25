@@ -1,0 +1,7 @@
+Register Alice
+Sleep 0.5
+Lend 1984 Alice
+Sleep 1.5
+Return 1984
+Sleep 1
+Lend To_Kill_a_Mockingbird Alice

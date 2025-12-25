@@ -1,0 +1,5 @@
+Register Bob
+Sleep 1.5
+Lend Harry_Potter Bob
+Sleep 2
+Return Harry_Potter
