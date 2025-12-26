@@ -2,39 +2,41 @@
 
 [BUILDER] Simulation Started.
 [LIBRARY] Library process starting...
+[LIBRARY] Loaded 5 books from books.conf
 [LIBRARY] Server listening on port 8080...
 [CLIENT_PROC] Starting 2 client threads...
 [CLIENT_THREAD] User thread started, processing: user1.txt
 [CLIENT_THREAD] User thread started, processing: user2.txt
+[CLIENT_THREAD] Connected to library (socket 4)
+[CLIENT_THREAD] Connected to library (socket 6)
 [LIBRARY_THREAD] Request received: Register Bob
 [LIBRARY_THREAD] Response sent: success 1
-[CLIENT_THREAD] Command: Register Bob | Response: success 1
 [LIBRARY_THREAD] Request received: Register Alice
-[LIBRARY_THREAD] Response sent: success 2
+[CLIENT_THREAD] Command: Register Bob | Response: success 1
 [CLIENT_THREAD] Sleeping for 1.5 seconds
+[LIBRARY_THREAD] Response sent: success 2
 [CLIENT_THREAD] Command: Register Alice | Response: success 2
 [CLIENT_THREAD] Sleeping for 0.5 seconds
-[LIBRARY_THREAD] Request received: Lend 1984 Alice
-[LIBRARY_THREAD] Response sent: success
-[CLIENT_THREAD] Command: Lend 1984 Alice | Response: success
+[CLIENT_THREAD] Server closed connection, will reconnect
 [CLIENT_THREAD] Sleeping for 1.5 seconds
-[LIBRARY_THREAD] Request received: Lend Harry_Potter Bob
-[LIBRARY_THREAD] Response sent: success
-[CLIENT_THREAD] Command: Lend Harry_Potter Bob | Response: success
+[CLIENT_THREAD] Server closed connection, will reconnect
 [CLIENT_THREAD] Sleeping for 2.0 seconds
+[CLIENT_THREAD] Connected to library (socket 4)
 [LIBRARY_THREAD] Request received: Return 1984
 [LIBRARY_THREAD] Response sent: success
 [CLIENT_THREAD] Command: Return 1984 | Response: success
 [CLIENT_THREAD] Sleeping for 1.0 seconds
-[LIBRARY_THREAD] Request received: Lend To_Kill_a_Mockingbird Alice
-[LIBRARY_THREAD] Response sent: success
-[CLIENT_THREAD] Command: Lend To_Kill_a_Mockingbird Alice | Response: success
+[CLIENT_THREAD] Server closed connection, will reconnect
 [CLIENT_THREAD] User thread finished: user2.txt
+[CLIENT_THREAD] Connected to library (socket 4)
 [LIBRARY_THREAD] Request received: Return Harry_Potter
 [LIBRARY_THREAD] Response sent: success
 [CLIENT_THREAD] Command: Return Harry_Potter | Response: success
+[CLIENT_THREAD] Connection closed
 [CLIENT_THREAD] User thread finished: user1.txt
 [CLIENT_PROC] All user threads finished.
 [BUILDER] Client process exited successfully.
-[BUILDER] Library process terminated.
+[LIBRARY] Shutting down, closing server...
+[LIBRARY] Clean shutdown completed.
+[BUILDER] Library process exited successfully.
 [BUILDER] Simulation Finished.
