@@ -7,16 +7,16 @@
 [CLIENT_PROC] Starting 2 client threads...
 [CLIENT_THREAD] User thread started, processing: user1.txt
 [CLIENT_THREAD] User thread started, processing: user2.txt
-[CLIENT_THREAD] Connected to library (socket 4)
 [CLIENT_THREAD] Connected to library (socket 6)
-[LIBRARY_THREAD] Request received: Register Bob
-[LIBRARY_THREAD] Response sent: success 1
+[CLIENT_THREAD] Connected to library (socket 4)
 [LIBRARY_THREAD] Request received: Register Alice
-[CLIENT_THREAD] Command: Register Bob | Response: success 1
-[CLIENT_THREAD] Sleeping for 1.5 seconds
+[LIBRARY_THREAD] Response sent: success 1
+[LIBRARY_THREAD] Request received: Register Bob
+[CLIENT_THREAD] Command: Register Alice | Response: success 1
 [LIBRARY_THREAD] Response sent: success 2
-[CLIENT_THREAD] Command: Register Alice | Response: success 2
 [CLIENT_THREAD] Sleeping for 0.5 seconds
+[CLIENT_THREAD] Command: Register Bob | Response: success 2
+[CLIENT_THREAD] Sleeping for 1.5 seconds
 [CLIENT_THREAD] Server closed connection, will reconnect
 [CLIENT_THREAD] Sleeping for 1.5 seconds
 [CLIENT_THREAD] Server closed connection, will reconnect
